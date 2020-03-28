@@ -2,7 +2,9 @@ package com.guru99.com.keywordFramework;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.List;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
@@ -10,7 +12,9 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.drivers.DriverFactory;
 
@@ -54,11 +58,52 @@ public class ReusableFuntion {
 		}
 		return prop.getProperty(key);
 	}
-	
+	WebDriver driver=null;
 	public void launchApplication() {
-		WebDriver driver=DriverFactory.getBrowser(fetchProp("browser_name"));
+		driver=DriverFactory.getBrowser(fetchProp("browser_name"));
 		driver.get(fetchProp("URL"));
-		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+	public void fillText(String locator, String locator_value, String param1) {
+		if(locator.equalsIgnoreCase("Id")) {
+			driver.findElement(By.id(fetchProp(locator_value))).sendKeys(param1);
+		}else if(locator.equalsIgnoreCase("name")) {
+			driver.findElement(By.name(fetchProp(locator_value))).sendKeys(param1);
+		}else if(locator.equalsIgnoreCase("xpath")) {
+			driver.findElement(By.xpath(fetchProp(locator_value))).sendKeys(param1);
+		}
+	}
+	public void click(String locator, String locator_value) {
+		if(locator.equalsIgnoreCase("Id")) {
+			driver.findElement(By.id(fetchProp(locator_value))).click();
+		}else if(locator.equalsIgnoreCase("name")) {
+			driver.findElement(By.name(fetchProp(locator_value))).click();
+		}else if(locator.equalsIgnoreCase("xpath")) {
+			driver.findElement(By.xpath(fetchProp(locator_value))).click();
+		}else if(locator.equalsIgnoreCase("linkText")) {
+			driver.findElement(By.linkText(fetchProp(locator_value))).click();
+		}
+	}
+	public void clickRadio(String locator, String locator_value, String param1) {
+		By by=null;
+		if(locator.equalsIgnoreCase("Id")) {
+			by=By.id(locator);
+		}else if(locator.equalsIgnoreCase("name")) {
+			by=By.name(locator);
+		}else if(locator.equalsIgnoreCase("xpath")) {
+			by=By.xpath(locator);
+		}else if(locator.equalsIgnoreCase("linkText")) {
+			by=By.linkText(locator);
+		}
+		if(by !=null) {
+			List<WebElement> genders = driver.findElements(by);
+			if(param1.equalsIgnoreCase("Male")) {
+				genders.get(0).click();;
+			}else {
+				genders.get(1).click();;
+			}
+		}
 	}
 
 }
