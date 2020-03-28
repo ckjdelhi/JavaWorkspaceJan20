@@ -9,7 +9,7 @@ public class LoginPage {
 	public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(name = "uid")
+	@FindBy(name = "uid")//driver.findElemenent(By.name("uid")
 	private WebElement txtUserName;
 	
 	@FindBy(xpath = "//*[@name='password']")
