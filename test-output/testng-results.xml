@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="17" passed="17">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="3603" started-at="2020-04-01T06:41:25 IST" finished-at="2020-04-01T06:41:28 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="3603" started-at="2020-04-01T06:41:25 IST" finished-at="2020-04-01T06:41:28 IST">
+      <class name="com.test.EmailValidatorTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.EmailValidatorTest@27406a17]" name="setUp" is-config="true" duration-ms="2" started-at="2020-04-01T06:41:27 IST" finished-at="2020-04-01T06:41:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="canTestEmailIDWhenInputIsBlank()[pri:0, instance:com.test.EmailValidatorTest@27406a17]" name="canTestEmailIDWhenInputIsBlank" duration-ms="2" started-at="2020-04-01T06:41:27 IST" finished-at="2020-04-01T06:41:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canTestEmailIDWhenInputIsBlank -->
+        <test-method status="PASS" signature="canTestEmailIDWhenInputIsNull()[pri:0, instance:com.test.EmailValidatorTest@27406a17]" name="canTestEmailIDWhenInputIsNull" duration-ms="2" started-at="2020-04-01T06:41:27 IST" depends-on-methods="com.test.EmailValidatorTest.canTestEmailIDWhenInputIsBlank" finished-at="2020-04-01T06:41:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canTestEmailIDWhenInputIsNull -->
+        <test-method status="PASS" signature="canTestEmailIDWhenInputIsWithoutAtTheRate()[pri:0, instance:com.test.EmailValidatorTest@27406a17]" name="canTestEmailIDWhenInputIsWithoutAtTheRate" duration-ms="2" started-at="2020-04-01T06:41:27 IST" depends-on-methods="com.test.EmailValidatorTest.canTestEmailIDWhenInputIsNull" finished-at="2020-04-01T06:41:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canTestEmailIDWhenInputIsWithoutAtTheRate -->
+        <test-method status="PASS" signature="canTestEmailIDWhenInputValid()[pri:0, instance:com.test.EmailValidatorTest@27406a17]" name="canTestEmailIDWhenInputValid" duration-ms="2" started-at="2020-04-01T06:41:27 IST" depends-on-methods="com.test.EmailValidatorTest.canTestEmailIDWhenInputIsWithoutAtTheRate" finished-at="2020-04-01T06:41:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canTestEmailIDWhenInputValid -->
+        <test-method status="PASS" signature="canTestEmailIDWhenInputInvalid2()[pri:0, instance:com.test.EmailValidatorTest@27406a17]" name="canTestEmailIDWhenInputInvalid2" duration-ms="2" started-at="2020-04-01T06:41:27 IST" depends-on-methods="com.test.EmailValidatorTest.canTestEmailIDWhenInputValid" finished-at="2020-04-01T06:41:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canTestEmailIDWhenInputInvalid2 -->
+      </class> <!-- com.test.EmailValidatorTest -->
+      <class name="com.test.GoogleTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.GoogleTest@76b1e9b8]" name="setUp" is-config="true" duration-ms="6031" started-at="2020-04-01T06:41:19 IST" finished-at="2020-04-01T06:41:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="canOpenGoogleURL()[pri:0, instance:com.test.GoogleTest@76b1e9b8]" name="canOpenGoogleURL" duration-ms="58" started-at="2020-04-01T06:41:25 IST" finished-at="2020-04-01T06:41:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canOpenGoogleURL -->
+        <test-method status="PASS" signature="canSearchSeleniumHQ()[pri:0, instance:com.test.GoogleTest@76b1e9b8]" name="canSearchSeleniumHQ" duration-ms="2084" started-at="2020-04-01T06:41:25 IST" finished-at="2020-04-01T06:41:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canSearchSeleniumHQ -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.test.GoogleTest@76b1e9b8]" name="closeBrowser" is-config="true" duration-ms="1000" started-at="2020-04-01T06:41:28 IST" finished-at="2020-04-01T06:41:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.test.GoogleTest -->
+      <class name="com.test.DataDrivenTest">
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="2" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCase_ID]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TestStep_ID]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Description]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Action]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Locators]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Locator_Value]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Param1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canTestExcelData -->
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="3" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TS001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Launch guru99 website]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[launchAppl]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canTestExcelData -->
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="4" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TS001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Fill user id]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fillText]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[xpath]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[txtUserID]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[mgr123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canTestExcelData -->
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="2" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TS002]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Fill password]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fillText]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[xpath]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[txtPassword]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[mgr!23]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canTestExcelData -->
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="4" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TS003]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[click on login button]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[click]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[xpath]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[btnLoginButton]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canTestExcelData -->
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="1" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TS001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[click on new customer link]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[click]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[linkText]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[linkNewCustomer]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canTestExcelData -->
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="0" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC004]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TS001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[click on new account link]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[click]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[xpath]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[linkNewAccount]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canTestExcelData -->
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="1" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC005]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TS001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[click on new customer link]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[click]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[linkText]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[linkNewCustomer]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canTestExcelData -->
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="2" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC006]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TS001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Fill customer name]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fillText]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[xpath]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[txtCustomerName]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Prasoona]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canTestExcelData -->
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="1" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC006]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TS002]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[click on Male button]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[clickRadio]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[xpath]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[btnGender]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canTestExcelData -->
+      </class> <!-- com.test.DataDrivenTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
