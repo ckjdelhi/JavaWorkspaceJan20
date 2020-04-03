@@ -1,57 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="17" passed="17">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="3603" started-at="2020-04-01T06:41:25 IST" finished-at="2020-04-01T06:41:28 IST">
+  <suite name="Default suite" duration-ms="20076" started-at="2020-04-03T06:20:32 IST" finished-at="2020-04-03T06:20:52 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="3603" started-at="2020-04-01T06:41:25 IST" finished-at="2020-04-01T06:41:28 IST">
-      <class name="com.test.EmailValidatorTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.EmailValidatorTest@27406a17]" name="setUp" is-config="true" duration-ms="2" started-at="2020-04-01T06:41:27 IST" finished-at="2020-04-01T06:41:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="canTestEmailIDWhenInputIsBlank()[pri:0, instance:com.test.EmailValidatorTest@27406a17]" name="canTestEmailIDWhenInputIsBlank" duration-ms="2" started-at="2020-04-01T06:41:27 IST" finished-at="2020-04-01T06:41:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- canTestEmailIDWhenInputIsBlank -->
-        <test-method status="PASS" signature="canTestEmailIDWhenInputIsNull()[pri:0, instance:com.test.EmailValidatorTest@27406a17]" name="canTestEmailIDWhenInputIsNull" duration-ms="2" started-at="2020-04-01T06:41:27 IST" depends-on-methods="com.test.EmailValidatorTest.canTestEmailIDWhenInputIsBlank" finished-at="2020-04-01T06:41:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- canTestEmailIDWhenInputIsNull -->
-        <test-method status="PASS" signature="canTestEmailIDWhenInputIsWithoutAtTheRate()[pri:0, instance:com.test.EmailValidatorTest@27406a17]" name="canTestEmailIDWhenInputIsWithoutAtTheRate" duration-ms="2" started-at="2020-04-01T06:41:27 IST" depends-on-methods="com.test.EmailValidatorTest.canTestEmailIDWhenInputIsNull" finished-at="2020-04-01T06:41:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- canTestEmailIDWhenInputIsWithoutAtTheRate -->
-        <test-method status="PASS" signature="canTestEmailIDWhenInputValid()[pri:0, instance:com.test.EmailValidatorTest@27406a17]" name="canTestEmailIDWhenInputValid" duration-ms="2" started-at="2020-04-01T06:41:27 IST" depends-on-methods="com.test.EmailValidatorTest.canTestEmailIDWhenInputIsWithoutAtTheRate" finished-at="2020-04-01T06:41:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- canTestEmailIDWhenInputValid -->
-        <test-method status="PASS" signature="canTestEmailIDWhenInputInvalid2()[pri:0, instance:com.test.EmailValidatorTest@27406a17]" name="canTestEmailIDWhenInputInvalid2" duration-ms="2" started-at="2020-04-01T06:41:27 IST" depends-on-methods="com.test.EmailValidatorTest.canTestEmailIDWhenInputValid" finished-at="2020-04-01T06:41:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- canTestEmailIDWhenInputInvalid2 -->
-      </class> <!-- com.test.EmailValidatorTest -->
-      <class name="com.test.GoogleTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.GoogleTest@76b1e9b8]" name="setUp" is-config="true" duration-ms="6031" started-at="2020-04-01T06:41:19 IST" finished-at="2020-04-01T06:41:25 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="canOpenGoogleURL()[pri:0, instance:com.test.GoogleTest@76b1e9b8]" name="canOpenGoogleURL" duration-ms="58" started-at="2020-04-01T06:41:25 IST" finished-at="2020-04-01T06:41:25 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- canOpenGoogleURL -->
-        <test-method status="PASS" signature="canSearchSeleniumHQ()[pri:0, instance:com.test.GoogleTest@76b1e9b8]" name="canSearchSeleniumHQ" duration-ms="2084" started-at="2020-04-01T06:41:25 IST" finished-at="2020-04-01T06:41:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- canSearchSeleniumHQ -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.test.GoogleTest@76b1e9b8]" name="closeBrowser" is-config="true" duration-ms="1000" started-at="2020-04-01T06:41:28 IST" finished-at="2020-04-01T06:41:29 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.test.GoogleTest -->
+    <test name="Default test" duration-ms="20076" started-at="2020-04-03T06:20:32 IST" finished-at="2020-04-03T06:20:52 IST">
       <class name="com.test.DataDrivenTest">
-        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="2" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@26aa12dd]" name="canTestExcelData" duration-ms="9" started-at="2020-04-03T06:20:33 IST" data-provider="EXCEL_DATA" finished-at="2020-04-03T06:20:33 IST">
           <params>
             <param index="0">
               <value>
@@ -92,7 +48,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canTestExcelData -->
-        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="3" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@26aa12dd]" name="canTestExcelData" duration-ms="14477" started-at="2020-04-03T06:20:33 IST" data-provider="EXCEL_DATA" finished-at="2020-04-03T06:20:48 IST">
           <params>
             <param index="0">
               <value>
@@ -133,7 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canTestExcelData -->
-        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="4" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@26aa12dd]" name="canTestExcelData" duration-ms="181" started-at="2020-04-03T06:20:48 IST" data-provider="EXCEL_DATA" finished-at="2020-04-03T06:20:48 IST">
           <params>
             <param index="0">
               <value>
@@ -174,7 +130,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canTestExcelData -->
-        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="2" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@26aa12dd]" name="canTestExcelData" duration-ms="230" started-at="2020-04-03T06:20:48 IST" data-provider="EXCEL_DATA" finished-at="2020-04-03T06:20:48 IST">
           <params>
             <param index="0">
               <value>
@@ -215,7 +171,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canTestExcelData -->
-        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="4" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@26aa12dd]" name="canTestExcelData" duration-ms="1609" started-at="2020-04-03T06:20:48 IST" data-provider="EXCEL_DATA" finished-at="2020-04-03T06:20:50 IST">
           <params>
             <param index="0">
               <value>
@@ -256,7 +212,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canTestExcelData -->
-        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="1" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@26aa12dd]" name="canTestExcelData" duration-ms="844" started-at="2020-04-03T06:20:50 IST" data-provider="EXCEL_DATA" finished-at="2020-04-03T06:20:51 IST">
           <params>
             <param index="0">
               <value>
@@ -297,7 +253,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canTestExcelData -->
-        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="0" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@26aa12dd]" name="canTestExcelData" duration-ms="820" started-at="2020-04-03T06:20:51 IST" data-provider="EXCEL_DATA" finished-at="2020-04-03T06:20:51 IST">
           <params>
             <param index="0">
               <value>
@@ -338,7 +294,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canTestExcelData -->
-        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="1" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@26aa12dd]" name="canTestExcelData" duration-ms="510" started-at="2020-04-03T06:20:51 IST" data-provider="EXCEL_DATA" finished-at="2020-04-03T06:20:52 IST">
           <params>
             <param index="0">
               <value>
@@ -379,7 +335,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canTestExcelData -->
-        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="2" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@26aa12dd]" name="canTestExcelData" duration-ms="172" started-at="2020-04-03T06:20:52 IST" data-provider="EXCEL_DATA" finished-at="2020-04-03T06:20:52 IST">
           <params>
             <param index="0">
               <value>
@@ -420,7 +376,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canTestExcelData -->
-        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@2af004b]" name="canTestExcelData" duration-ms="1" started-at="2020-04-01T06:41:28 IST" data-provider="EXCEL_DATA" finished-at="2020-04-01T06:41:28 IST">
+        <test-method status="PASS" signature="canTestExcelData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.DataDrivenTest@26aa12dd]" name="canTestExcelData" duration-ms="139" started-at="2020-04-03T06:20:52 IST" data-provider="EXCEL_DATA" finished-at="2020-04-03T06:20:52 IST">
           <params>
             <param index="0">
               <value>
@@ -462,6 +418,6 @@
           </reporter-output>
         </test-method> <!-- canTestExcelData -->
       </class> <!-- com.test.DataDrivenTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
