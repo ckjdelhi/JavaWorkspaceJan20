@@ -32,7 +32,7 @@ public class EmailValidatorTest {
 		boolean isValid = emailValidator.isValid("chandan.krk@gmail.com");
 		Assert.assertTrue(isValid);
 	}
-	@Test(dependsOnMethods = "canTestEmailIDWhenInputValid", enabled = true)
+	@Test(dependsOnMethods = "canTestEmailIDWhenInputValid", enabled = false)
 	public void canTestEmailIDWhenInputInvalid2() {
 		boolean isValid = emailValidator.isValid("chandan@krk@gmail.com");
 		Assert.assertFalse(isValid);

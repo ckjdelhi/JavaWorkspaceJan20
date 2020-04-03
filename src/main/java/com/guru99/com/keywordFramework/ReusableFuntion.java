@@ -88,13 +88,13 @@ public class ReusableFuntion {
 	public void clickRadio(String locator, String locator_value, String param1) {
 		By by=null;
 		if(locator.equalsIgnoreCase("Id")) {
-			by=By.id(locator);
+			by=By.id(fetchProp(locator_value));
 		}else if(locator.equalsIgnoreCase("name")) {
-			by=By.name(locator);
+			by=By.name(fetchProp(locator_value));
 		}else if(locator.equalsIgnoreCase("xpath")) {
-			by=By.xpath(locator);
+			by=By.xpath(fetchProp(locator_value));
 		}else if(locator.equalsIgnoreCase("linkText")) {
-			by=By.linkText(locator);
+			by=By.linkText(fetchProp(locator_value));
 		}
 		if(by !=null) {
 			List<WebElement> genders = driver.findElements(by);
