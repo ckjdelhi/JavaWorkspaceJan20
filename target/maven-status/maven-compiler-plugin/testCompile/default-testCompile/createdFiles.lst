@@ -1,0 +1,5 @@
+com\test\GoogleTest.class
+com\test\DataDrivenTest.class
+com\test\EmailValidatorTest.class
+com\test\BaseTest.class
+com\test\EmailValidator.class
