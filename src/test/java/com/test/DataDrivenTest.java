@@ -1,5 +1,6 @@
 package com.test;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -25,6 +26,10 @@ public class DataDrivenTest {
 				break;
 		}
 	}
+	@AfterClass
+	public void close() {
+		func.closeBrowser();
+	}
 	
 	@DataProvider(name = "EXCEL_DATA")
 	public Object[][] readData(){
@@ -35,4 +40,5 @@ public class DataDrivenTest {
 		}
 		return null;
 	}
+	  
 }
