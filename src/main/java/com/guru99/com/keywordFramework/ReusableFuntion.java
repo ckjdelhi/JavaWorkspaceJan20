@@ -105,5 +105,8 @@ public class ReusableFuntion {
 			}
 		}
 	}
+	public void closeBrowser() {
+		driver.quit();
+	}
 
 }

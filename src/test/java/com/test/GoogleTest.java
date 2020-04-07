@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 import com.drivers.DriverFactory;
@@ -26,5 +27,9 @@ public class GoogleTest extends BaseTest {
 	findElement.sendKeys("SeleniumHQ");
 	findElement.submit();
 	Assert.assertEquals(driver.getTitle().toLowerCase(), "seleniumhq - Google Search".toLowerCase());
+  }
+  @AfterClass
+  public void close() {
+	  driver.quit();
   }
 }
