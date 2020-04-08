@@ -5,5 +5,5 @@ Selenium Frameworks + Maven + TestNG + SonarQube
 To RUN
 : mvn clean install sonar:sonar
 
-
+Added jenkins
 
