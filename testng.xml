@@ -5,7 +5,7 @@
     <classes>
       <class name="com.test.GoogleTest"/>
       <class name="com.test.EmailValidatorTest"/>
-      <class name="com.test.DataDrivenTest"/>
+      <!--<class name="com.test.DataDrivenTest"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
